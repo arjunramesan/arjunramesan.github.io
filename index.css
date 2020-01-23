@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(223,153,38);
+    color:white;
+  }
+
+  .progressContainer {
+      top: 0;
+      right: 0;
+    bottom: 0;
+      left: 0;
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    width: 20rem;
+    height: 3px;
+  }
+
+  .progressFill {
+    animation: load 2s linear forwards;
+    background-color: white;
+    height: 100%;
+    width: 0rem;
+  }
+  
+  @keyframes load {
+    0% { width: 0rem; }
+    100% { width: 20rem; }
+  }
+
+  
