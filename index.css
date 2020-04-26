@@ -20,6 +20,20 @@ html, body {
     height: 3px;
   }
 
+  #myiframe{
+    height:100%;
+    width:100%;
+    border:none;
+    display:none;
+  }
+
+
+  @media only screen and (max-width: 812px) {
+    /* #myiframe::-webkit-scrollbar {
+      display: none;
+    } */
+  }
+
   .progressFill {
     animation: load 2s linear forwards;
     background-color: white;

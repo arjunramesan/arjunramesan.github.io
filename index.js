@@ -1,1 +1,1 @@
-setTimeout(function(){ window.location.href="http://arjunramesan.us-east-1.elasticbeanstalk.com/" }, 2800);
+setTimeout(function(){ document.getElementById('loaderArea').style.display = 'none'; document.getElementById('myiframe').style.display = 'block'; }, 2800);
