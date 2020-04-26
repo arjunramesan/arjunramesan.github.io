@@ -1,1 +1,1 @@
-setTimeout(function(){ window.location.href="http://arjunramesan.us-east-1.elasticbeanstalk.com/" }, 2500);
+setTimeout(function(){ window.location.href="http://arjunramesan.us-east-1.elasticbeanstalk.com/" }, 2800);
