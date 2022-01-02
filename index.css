@@ -50,16 +50,69 @@
     padding: 0.5rem 1rem;
     background: transparent;
     color: white;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 1rem;
+    margin-right: 0.8rem;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
+}
+
+.playableButton img{
+  width: 2rem;
+  height: 2rem;
 }
 
 .playableButton:hover{
     background-color: white;
     color: #7b4397;
 }
+
+.detailsSection{
+  width: 80vw;
+  margin:auto;
+  min-height: 100vh;
+  margin-top: 2rem;
+}
+
+.detailsTitle{
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: solid 4px #7b4397;
+  margin-bottom: 2rem;
+}
+
+.detailsSubTitle{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.skillCard{
+  width: 8rem;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.skillCardText{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.skillCardImage{
+  height: 4rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 @media only screen and (max-width: 600px) {
   .introImage {
@@ -73,5 +126,9 @@
 
   .introTitleDiv h4 {
     font-size: 1rem;
+  }
+
+  .detailsSection{
+    width: calc(100vw - 1rem);
   }
 }
