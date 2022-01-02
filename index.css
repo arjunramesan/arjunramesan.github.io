@@ -1,48 +1,77 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    background: linear-gradient(-45deg, #7a45a1, #c03a31);
-    background-size: 400% 400%;
-    animation: gradient 3s ease infinite;
+.introSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
 
-    color:white;
-  }
+.redBackground {
+  background-color: #dc2430;
+  background-image: linear-gradient(to right, #7b4397, #dc2430);
+  clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
 
-  .progressContainer {
-      top: 0;
-      right: 0;
-    bottom: 0;
-      left: 0;
-    display: inline-block;
-    margin: auto;
-    position: absolute;
-    width: 20rem;
-    height: 3px;
-  }
+.introTitleDiv {
+  padding: 1rem;
+  color: white;
+}
 
+.introTitleDiv h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+  font-weight: 600;
+}
 
-  .progressFill {
-    animation: load 2s linear forwards;
+.introTitleDiv h4 {
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.introImage {
+  position: absolute;
+  right: -5rem;
+  bottom: 0rem;
+  height: 25rem;
+  width: 42vw;
+  z-index: -2;
+}
+
+.playableButton{
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    color: white;
+    margin-top: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.playableButton:hover{
     background-color: white;
-    height: 100%;
-    width: 0rem;
-  }
-  
-  @keyframes load {
-    0% { width: 0rem; }
-    100% { width: 20rem; }
+    color: #7b4397;
+}
+
+@media only screen and (max-width: 600px) {
+  .introImage {
+    height: 30vh;
+    width: 65vw;
   }
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  .introTitleDiv h1 {
+    font-size: 1.8rem;
   }
 
-  
+  .introTitleDiv h4 {
+    font-size: 1rem;
+  }
+}
