@@ -8,17 +8,14 @@
 
 .redBackground {
   background-color: #dc2430;
-  background-image: linear-gradient(to right, #7b4397, #dc2430);
+  background-image: linear-gradient(to right, #7b4397, #da414b);
   clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   z-index: -1;
 }
 
-.cardHolder{
-  /* display: flex; */
-}
 
 .introTitleDiv {
   padding: 20px;
@@ -51,34 +48,100 @@
   width: 100%;
 }
 
-.playableButton{
-    border: solid 2px white;
-    border-radius: 5px;
-    padding: 10px 14px;
-    background: transparent;
-    color: white;
-    margin-top: 30px;
-    font-size: 14px;
-    margin-right: 8px;
-    cursor: pointer;
-    transition: all ease-in-out 0.1s;
+.clickMeButtonContainer{
+  margin-top: 120px;
 }
 
-.playableButton img{
-  width: 20px;
-  height: 20px;
+.clickMeButtonContainer button {
+  background: transparent;
+  color: #fff;
+  margin-right: 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 15px 30px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 1.5px;
 }
 
-.playableButton:hover{
-    background-color: white;
-    color: #7b4397;
+.clickMeButtonContainer button:hover{
+  background-color: white;
+  color: #7b4397;
+}
+
+.button-parrot .parrot {
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  animation: blink 0.8s infinite;
+  color: transparent;
+}
+.button-parrot .parrot:before {
+  content: "Click Me!";
+}
+.button-parrot .parrot:nth-child(1) {
+  top: -30px;
+  left: -40px;
+  font: 12px/1 "Margarine", sans-serif;
+  transform: rotate(-20deg);
+  animation-duration: 0.5s;
+}
+.button-parrot .parrot:nth-child(2) {
+  font: 12px/1 "Margarine", sans-serif;
+  right: -40px;
+  top: -20px;
+  transform: rotate(15deg);
+  animation-duration: 0.3s;
+}
+.button-parrot .parrot:nth-child(3) {
+  font: 16px/1 "Margarine", sans-serif;
+  top: -60px;
+  left: 15px;
+  transform: rotate(10deg);
+  animation-duration: 1s;
+}
+.button-parrot .parrot:nth-child(4) {
+  font: 18px/1 "Margarine", sans-serif;
+  top: -70px;
+  left: 95px;
+  transform: rotate(2deg);
+  animation-duration: 0.7s;
+}
+.button-parrot .parrot:nth-child(5) {
+  font: 14px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 105px;
+  transform: rotate(-20deg);
+  animation-duration: 0.8s;
+}
+.button-parrot .parrot:nth-child(6) {
+  font: 12px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 5px;
+  transform: rotate(10deg);
+  animation-duration: 1.2s;
+}
+.button-parrot button:hover .parrot:before {
+  content: "Do it!";
+  width: 70px;
+}
+
+
+@keyframes blink {
+  25%, 75% {
+    color: transparent;
+  }
+  40%, 60% {
+    color: #fff;
+  }
 }
 
 .detailsSection{
   width: 80vw;
   margin:auto;
-  min-height: 100vh;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .detailsTitle{
@@ -128,18 +191,60 @@
   background-repeat: no-repeat;
 }
 
+.workExpCard{
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 15px;
+  box-shadow: 0 4px 2px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.workExpCardTitle{
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.workExpCardSubTitle{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #373737;
+}
+
+.workExpCardHeading{
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+
+.workExpCardDate{
+  float: right;
+  color: #373737;
+  font-size: 14px;
+}
+
+.workExpCardImage{
+  width: 60px;
+  background-size: contain;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.workExpCardParagraph{
+  margin-top: 30px;
+  font-size: 14px;
+  color: #373737;
+}
 
 @media only screen and (max-width: 600px) {
   .introImage {
     right: -12vw;
     width: 60vw;
-  }
-
-  .playableButton{
-    font-size: 12px;
-    border: solid 1px white;
-    margin-top: 20px;
-
   }
 
   .introTitleDiv h1 {
@@ -169,11 +274,12 @@
   }
 
   .skillCard {
-    width: 90px;
+    width: 100px;
     display: inline-block;
     box-shadow: 0 4px 2px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     text-align: center;
-    margin-right: 16px;
+    margin-right: 8px;
+    margin-left: 8px;
     margin-bottom: 16px;
     padding: 15px;
     border-radius: 5px;
@@ -185,6 +291,14 @@
 
 .skillCardImage{
   height: 40px;
+}
+
+.workExpCardHeading{
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+.workExpCardDate{
+  float: left;
 }
 
 }
