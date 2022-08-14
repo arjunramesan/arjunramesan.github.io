@@ -8,6 +8,26 @@
   <title>Arjun Ramesan | Portfolio</title>
   <link rel="stylesheet" href="globals.css" />
   <link rel="stylesheet" href="index.css" />
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K19HTRVT4E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K19HTRVT4E');
+  </script>
+
 </head>
 
 <body>
@@ -19,8 +39,8 @@
 
      
       <div class="clickMeButtonContainer button-parrot">
-        <button>Resume</button>
-        <button>Playable
+        <button onclick="gtag('event', 'resume_click');">Resume</button>
+        <button onclick="gtag('event', 'playable_click');">Playable
           <div class="parrot"></div>
           <div class="parrot"></div>
           <div class="parrot"></div>
@@ -55,9 +75,24 @@
               <span class="workExpCardDate">July 2021 - Current</span>
             </div>
           </div>
-          <p class="workExpCardParagraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa praesentium quae ab pariatur esse reiciendis, quo nesciunt maxime! Architecto, quia!
-          </p>
+          <div class="workExpCardParagraph">
+            Working on converting POCs to full scale products from scratch at BYJU'S Labs.
+            <ol>
+              <li>
+                <b>Web QnA</b>
+                <ul>
+                  <li>Lead developer at BYJU'S web QnA platform.&nbsp;(<a href="https://byjus.com/question-answer" target="_blank">https://byjus.com/question-answer</a>)</li>
+                  <li>Contains over <b>120k unique google indexed pages</b>.</li>
+                  <li>Built on <b>Next.JS</b> frontend and <b>MongoDB/Flask</b> backend.</li>
+                  <li>Initially built independently as a POC, then scaled up to serve <b>500k user sessions per day</b>, and an average traffic of <b>3-4M users per month</b>.</li>
+                  <li>Worked on <b>improving page performance (LCP, FCP, CLS, Speed Index)</b> to improve SEO.</li>
+                  <li>Improved page speed by <b>optimizing code, making APIs faster</b> and working with devops to <b>setup servers at strategic locations</b>.</li>
+                  <li>Leading & mentoring a team of 5 developers to maintain and improve this website.</li>
+
+                </ul>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
       <div class="workExpCard">

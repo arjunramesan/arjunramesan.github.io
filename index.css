@@ -26,14 +26,14 @@
   font-size: 58px;
   margin-bottom: 10px;
   margin-top: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .introTitleDiv h4 {
   font-size: 32px;
   margin-top: 10px;
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .introImage {
@@ -147,7 +147,7 @@
 .detailsTitle{
   margin-top: 0;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   border-bottom: solid 4px #7b4397;
   margin-bottom: 20px;
 }
@@ -156,7 +156,7 @@
   margin-top: 0;
   margin-bottom: 0;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -204,14 +204,14 @@
 .workExpCardTitle{
   margin-top: 0;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 
 .workExpCardSubTitle{
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   color: #373737;
 }
@@ -240,6 +240,11 @@
   font-size: 14px;
   color: #373737;
 }
+
+.workExpCardParagraph ul{
+  line-height: 30px;
+}
+
 
 @media only screen and (max-width: 600px) {
   .introImage {
