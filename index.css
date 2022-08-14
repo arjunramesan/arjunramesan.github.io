@@ -44,11 +44,11 @@
   z-index: -2;
 }
 
-.introImage img{
+.introImage img {
   width: 100%;
 }
 
-.clickMeButtonContainer{
+.clickMeButtonContainer {
   margin-top: 120px;
 }
 
@@ -66,7 +66,7 @@
   letter-spacing: 1.5px;
 }
 
-.clickMeButtonContainer button:hover{
+.clickMeButtonContainer button:hover {
   background-color: white;
   color: #7b4397;
 }
@@ -78,9 +78,11 @@
   animation: blink 0.8s infinite;
   color: transparent;
 }
+
 .button-parrot .parrot:before {
   content: "Click Me!";
 }
+
 .button-parrot .parrot:nth-child(1) {
   top: -30px;
   left: -40px;
@@ -88,6 +90,7 @@
   transform: rotate(-20deg);
   animation-duration: 0.5s;
 }
+
 .button-parrot .parrot:nth-child(2) {
   font: 12px/1 "Margarine", sans-serif;
   right: -40px;
@@ -95,6 +98,7 @@
   transform: rotate(15deg);
   animation-duration: 0.3s;
 }
+
 .button-parrot .parrot:nth-child(3) {
   font: 16px/1 "Margarine", sans-serif;
   top: -60px;
@@ -102,6 +106,7 @@
   transform: rotate(10deg);
   animation-duration: 1s;
 }
+
 .button-parrot .parrot:nth-child(4) {
   font: 18px/1 "Margarine", sans-serif;
   top: -70px;
@@ -109,6 +114,7 @@
   transform: rotate(2deg);
   animation-duration: 0.7s;
 }
+
 .button-parrot .parrot:nth-child(5) {
   font: 14px/1 "Margarine", sans-serif;
   top: 80px;
@@ -116,6 +122,7 @@
   transform: rotate(-20deg);
   animation-duration: 0.8s;
 }
+
 .button-parrot .parrot:nth-child(6) {
   font: 12px/1 "Margarine", sans-serif;
   top: 80px;
@@ -123,6 +130,7 @@
   transform: rotate(10deg);
   animation-duration: 1.2s;
 }
+
 .button-parrot button:hover .parrot:before {
   content: "Do it!";
   width: 70px;
@@ -130,21 +138,25 @@
 
 
 @keyframes blink {
-  25%, 75% {
+
+  25%,
+  75% {
     color: transparent;
   }
-  40%, 60% {
+
+  40%,
+  60% {
     color: #fff;
   }
 }
 
-.detailsSection{
+.detailsSection {
   width: 80vw;
-  margin:auto;
+  margin: auto;
   margin-top: 60px;
 }
 
-.detailsTitle{
+.detailsTitle {
   margin-top: 0;
   font-size: 32px;
   font-weight: 500;
@@ -152,7 +164,7 @@
   margin-bottom: 20px;
 }
 
-.detailsSubTitle{
+.detailsSubTitle {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 24px;
@@ -160,12 +172,12 @@
   margin-bottom: 20px;
 }
 
-.detailsSubSection{
+.detailsSubSection {
   margin-bottom: 40px;
   margin-top: 40px;
 }
 
-.skillCard{
+.skillCard {
   width: 110px;
   display: inline-block;
   box-shadow: 0 4px 2px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -176,7 +188,7 @@
   border-radius: 5px;
 }
 
-.skillCardText{
+.skillCardText {
   font-size: 14px;
   margin-top: 15px;
   height: 35px;
@@ -184,31 +196,28 @@
   justify-content: center;
 }
 
-.skillCardImage{
+.skillCardImage {
   height: 60px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.workExpCard{
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  column-gap: 15px;
+.workExpCard {
   box-shadow: 0 4px 2px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 5px;
 }
 
-.workExpCardTitle{
+.workExpCardTitle {
   margin-top: 0;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 8px;
 }
 
-.workExpCardSubTitle{
+.workExpCardSubTitle {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
@@ -216,18 +225,19 @@
   color: #373737;
 }
 
-.workExpCardHeading{
+.workExpCardHeading {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 60px 1fr 200px;
+  column-gap: 20px;
 }
 
-.workExpCardDate{
+.workExpCardDate {
   float: right;
   color: #373737;
   font-size: 14px;
 }
 
-.workExpCardImage{
+.workExpCardImage {
   width: 60px;
   background-size: contain;
   height: 60px;
@@ -235,13 +245,13 @@
   background-repeat: no-repeat;
 }
 
-.workExpCardParagraph{
+.workExpCardParagraph {
   margin-top: 30px;
   font-size: 14px;
   color: #373737;
 }
 
-.workExpCardParagraph ul{
+.workExpCardParagraph ul, .workExpCardParagraph ol {
   line-height: 30px;
 }
 
@@ -260,12 +270,12 @@
     font-size: 16px;
   }
 
-  .detailsSection{
+  .detailsSection {
     width: calc(100vw - 20px);
 
   }
 
-  .detailsTitle{
+  .detailsTitle {
     font-size: 28px;
   }
 
@@ -274,7 +284,7 @@
     margin-top: 20px;
   }
 
-  .detailsSubTitle{
+  .detailsSubTitle {
     font-size: 18px;
   }
 
@@ -288,22 +298,23 @@
     margin-bottom: 16px;
     padding: 15px;
     border-radius: 5px;
-}
+  }
 
-.skillCardText {
-  font-size: 12px;
-}
+  .skillCardText {
+    font-size: 12px;
+  }
 
-.skillCardImage{
-  height: 40px;
-}
+  .skillCardImage {
+    height: 40px;
+  }
 
-.workExpCardHeading{
-  grid-template-columns: 1fr;
-  row-gap: 20px;
-}
-.workExpCardDate{
-  float: left;
-}
+  .workExpCardHeading {
+    grid-template-columns: 60px 1fr 50px;
+  }
 
+  .workExpCard ul,
+  .workExpCard ol {
+    padding-inline-start: 15px;
+    line-height: 25px;
+  }
 }
