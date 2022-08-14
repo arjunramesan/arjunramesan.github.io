@@ -74,6 +74,7 @@
 .button-parrot .parrot {
   position: absolute;
   width: 60px;
+  z-index: -1;
   text-align: center;
   animation: blink 0.8s infinite;
   color: transparent;
@@ -260,6 +261,22 @@
   .introImage {
     right: -12vw;
     width: 60vw;
+  }
+
+  .clickMeButtonContainer{
+    margin-top: 30px;
+  }
+
+  .clickMeButtonContainer button{
+    display: block;
+    margin-bottom: 30px;
+    margin-right: 0;
+    border-width: 1px;
+    font-size: 12px;
+  }
+
+  .button-parrot .parrot {
+    display: none;
   }
 
   .introTitleDiv h1 {
