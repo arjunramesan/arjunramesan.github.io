@@ -16,50 +16,57 @@
   z-index: -1;
 }
 
+.cardHolder{
+  /* display: flex; */
+}
+
 .introTitleDiv {
-  padding: 1rem;
+  padding: 20px;
   color: white;
 }
 
 .introTitleDiv h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.2rem;
+  font-size: 58px;
+  margin-bottom: 10px;
   margin-top: 0;
   font-weight: 600;
 }
 
 .introTitleDiv h4 {
-  font-size: 1.5rem;
-  margin-top: 0.2rem;
+  font-size: 32px;
+  margin-top: 10px;
   margin-bottom: 0;
   font-weight: 400;
 }
 
 .introImage {
   position: absolute;
-  right: -5rem;
-  bottom: 0rem;
-  height: 25rem;
-  width: 42vw;
+  right: 0;
+  bottom: 0;
+  width: 34vw;
   z-index: -2;
+}
+
+.introImage img{
+  width: 100%;
 }
 
 .playableButton{
     border: solid 2px white;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    padding: 10px 14px;
     background: transparent;
     color: white;
-    margin-top: 2rem;
-    font-size: 1rem;
-    margin-right: 0.8rem;
+    margin-top: 30px;
+    font-size: 14px;
+    margin-right: 8px;
     cursor: pointer;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.1s;
 }
 
 .playableButton img{
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
 }
 
 .playableButton:hover{
@@ -71,43 +78,51 @@
   width: 80vw;
   margin:auto;
   min-height: 100vh;
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 
 .detailsTitle{
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 600;
   border-bottom: solid 4px #7b4397;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .detailsSubTitle{
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
+}
+
+.detailsSubSection{
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .skillCard{
-  width: 8rem;
+  width: 110px;
   display: inline-block;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 2px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   text-align: center;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 10px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .skillCardText{
-  font-size: 1rem;
-  margin-top: 1rem;
+  font-size: 14px;
+  margin-top: 15px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
 }
 
 .skillCardImage{
-  height: 4rem;
+  height: 60px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -116,19 +131,60 @@
 
 @media only screen and (max-width: 600px) {
   .introImage {
-    height: 30vh;
-    width: 65vw;
+    right: -12vw;
+    width: 60vw;
+  }
+
+  .playableButton{
+    font-size: 12px;
+    border: solid 1px white;
+    margin-top: 20px;
+
   }
 
   .introTitleDiv h1 {
-    font-size: 1.8rem;
+    font-size: 28px;
   }
 
   .introTitleDiv h4 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .detailsSection{
-    width: calc(100vw - 1rem);
+    width: calc(100vw - 20px);
+
   }
+
+  .detailsTitle{
+    font-size: 28px;
+  }
+
+  .detailsSubSection {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .detailsSubTitle{
+    font-size: 18px;
+  }
+
+  .skillCard {
+    width: 90px;
+    display: inline-block;
+    box-shadow: 0 4px 2px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    text-align: center;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.skillCardText {
+  font-size: 12px;
+}
+
+.skillCardImage{
+  height: 40px;
+}
+
 }
