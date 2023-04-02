@@ -1,9 +1,9 @@
-body{
+body {
   background-color: #03bff3;
   height: 100vh;
 }
 
-.sky{
+.sky {
   position: relative;
   height: calc(100vh - 150px);
   display: flex;
@@ -11,44 +11,122 @@ body{
   align-items: center;
 }
 
-.cloud{
+.cloud {
   position: absolute;
   z-index: -1;
 }
 
-#cloud_1{
+#cloud_1 {
   left: 100px;
   top: 20px;
   height: 200px;
 }
 
-#cloud_2{
+#cloud_2 {
   right: 100px;
   top: 300px;
   height: 100px;
 }
 
-.ground{
-  position: relative;
-}
-
-.grass{
-  height: 50px;
-  background-image: url('/assets/images/grass.png');
+.rock{
   position: absolute;
-  width: 100vw
+  bottom: -40px;
 }
 
-.earth{
+#rock_1{
+  left: 20px;
+  width: 100px;
+}
+
+.ground {
+  position: relative;
   height: 150px;
-  background-image: url('/assets/images/ground.png');
+  width: 200vw;
 }
 
-.introRibbon{
+.grass1 {
+  height: 50px;
+  background-image: url("/assets/images/grass1.png");
+  position: absolute;
+  width: 100%;
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -1;
+  bottom: 55px;
+}
+
+.grass2 {
+  height: 80px;
+  background-image: url("/assets/images/grass_2.png");
+  position: absolute;
+  width: 100%;
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -2;
+  bottom: 80px;
+}
+
+.mountain1{
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  height: 80px;
+  background-image: url("/assets/images/mountains_1.png");
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -3;
+}
+
+.mountain2{
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  height: 180px;
+  background-image: url("/assets/images/mountains_2.png");
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -4;
+}
+
+.mountain3{
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  height: 250px;
+  background-image: url("/assets/images/mountains_3.png");
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -4;
+}
+
+.mountain4{
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  height: 350px;
+  background-image: url("/assets/images/mountains_4.png");
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: -4;
+}
+
+
+.earth {
+  height: 100px;
+  background-image: url("/assets/images/ground.png");
+  background-repeat: repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.introRibbon {
   display: flex;
 }
 
-.introTextHolder{
+.introTextHolder {
   display: flex;
   background: #ed1c25;
   color: white;
@@ -60,48 +138,108 @@ body{
   font-size: 30px;
 }
 
-.leftRibbon, .rightRibbon{
+.leftRibbon,
+.rightRibbon {
   display: inline-block;
 }
 
-.tree{
+.tree {
   position: absolute;
-  bottom: 0px;
-  z-index: -1;
+  bottom: -5px;
+  z-index: -2;
 }
 
-#tree_1{
-  right: 60px;
+#tree_1 {
+  right: 10px;
+  width: 300px;
 }
 
-#tree_2{
+#tree_2 {
   left: 110px;
 }
 
-#tree_3{
+#tree_3 {
   left: 10px;
 }
 
-#tree_4{
+#tree_4 {
   right: 10px;
 }
 
+.bush{
+  position: absolute;
+  bottom: -5px;
+  z-index: -2;
+}
 
+#bush_1{
+  left: 100px;
+  width: 100px;
+}
+
+.introButtonHolder {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.popup-button {
+  font-size: 20px;
+  border: none;
+  padding: 16px 40px 16px 40px;
+  border-radius: 5px;
+  background: #d03651;
+  box-shadow: 0px 10px 0px 0px #a72b41, 0px 0px 10px 0px rgba(120, 120, 120, 0.4);;
+  color: white;
+  cursor: pointer;
+  transition: all 0.16s;
+  position: relative;
+  top: 0;
+  font-family: 'Bungee';
+}
+
+.popup-button:focus {
+  outline: none;
+}
+
+.popup-button:active {
+  box-shadow: 0px 5px 0px 0px #a72b41;
+  top: 5px;
+}
 
 
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
 
-  #cloud_1{
+  #cloud_1 {
     left: 70px;
     height: 100px;
   }
 
-  #cloud_2{
+  #cloud_2 {
     top: 200px;
     height: 50px;
   }
 
+
+  #tree_1 {
+    right: 110px;
+    width: 60px;
 }
 
+  #tree_2 {
+    left: 60px;
+    width: 70px;
+}
+
+#tree_3 {
+  left: 10px;
+  width: 100px;
+}
+
+  #tree_4 {
+    right: 10px;
+    width: 110px;
+}
+
+}
