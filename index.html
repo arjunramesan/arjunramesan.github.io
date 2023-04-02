@@ -1,326 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arjun Ramesan | Portfolio</title>
+    <meta name="description" content="Arjun Ramesan's portfolio website" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arjun Ramesan | Portfolio</title>
-  <link rel="stylesheet" href="globals.css" />
-  <link rel="stylesheet" href="index.css" />
-  <meta name="description" content="Arjun Ramesan's portfolio website">
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="intro-text-animation.css" />
 
-  <meta name="robots" content="index, follow">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K19HTRVT4E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K19HTRVT4E");
+    </script>
+  </head>
+  <body>
+    <div class="sky">
+      <!-- Clouds -->
+      <img class="cloud" id="cloud_1" src="/assets/images/cloud.png">
+      <img class="cloud" id="cloud_2" src="/assets/images/cloud.png">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K19HTRVT4E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K19HTRVT4E');
-  </script>
-
-</head>
-
-<body>
-  <section class="introSection">
-    <div class="redBackground"></div>
-    <div class="introTitleDiv">
-      <h1>Arjun Ramesan</h1>
-      <h4>Fullstack Web Developer</h4>
-
-     
-      <div class="clickMeButtonContainer button-parrot">
-        <button onclick="gtag('event', 'resume_click');">Resume</button>
-        <button onclick="gtag('event', 'playable_click');">Playable
-          <div class="parrot"></div>
-          <div class="parrot"></div>
-          <div class="parrot"></div>
-          <div class="parrot"></div>
-          <div class="parrot"></div>
-          <div class="parrot"></div>
-        </button>
-      </div>
-
-    </div>
-    <div class="introImage">
-      <!-- https://giphy.com/MikelMats -->
-      <img alt="gif" src="Assets/Images/giphy.gif" />
-    </div>
-  </section>
-
-  <section class="detailsSection">
-    <h2 class="detailsTitle">Work Experience</h2>
-    <!-- Frontend Skills -->
-    <div class="detailsSubSection">
-      <div class="workExpCard">
-          <div class="workExpCardHeading">
-            <div>
-              <div class="workExpCardImage" style="background-image: url(Assets/Images/workex/byjus.png)"></div>
-            </div>
-            <div>
-              <h3 class="workExpCardTitle">Fullstack Developer</h3>
-              <h3 class="workExpCardSubTitle">BYJU'S</h3>
-            </div>
-            <div>
-              <span class="workExpCardDate">July 2021 - Current</span>
-            </div>
+      <!-- Intro Ribbon & Name -->
+      <div>
+        <div class="introRibbon">
+          <div class="leftRibbon">
+            <img src="/assets/images/ribbon-left.png">
           </div>
-          <div class="workExpCardParagraph">
-            Working on converting POCs to full scale products from scratch at BYJU'S Labs.
-            <ol>
-              <li>
-                <b>Web QnA</b>
-                <ul>
-                  <li>Lead developer at BYJU'S web QnA platform.&nbsp;(<a href="https://byjus.com/question-answer" target="_blank">https://byjus.com/question-answer</a>). With over <b>120k unique google indexed pages</b>, this platform allows anyone to search for solutions to questions from Indian textbooks.</li>
-                  <li>Built on <b>Next.JS</b> frontend and <b>MongoDB/Flask</b> backend.</li>
-                  <li>Initially built independently as a POC, then scaled up to serve <b>500k user sessions per day</b>, and an average traffic of <b>3-4M users per month</b>.</li>
-                  <li>Worked on <b>improving page performance (LCP, FCP, CLS, Speed Index)</b> to improve SEO rankings.</li>
-                  <li>Improved page speed by <b>optimizing code, making APIs faster</b> and working with devops to <b>setup servers at strategic locations</b>.</li>
-                  <li>Leading & <b>mentoring a team of 5 developers</b> to maintain and improve this website.</li>
-                  <li>Working closely with the product team to <b>generate data visualizations and reports</b>.</li>
-                </ul>
-              </li>
-            </ol>
+          <div class="introTextHolder">
+            Interactive Resume Of
           </div>
-      </div>
-      <div class="workExpCard">
-        <div class="workExpCardHeading">
-          <div>
-            <div class="workExpCardImage" style="background-image: url(Assets/Images/workex/infosys.png)"></div>
-          </div>
-          <div>
-            <h3 class="workExpCardTitle">Specialist Programmer</h3>
-            <h3 class="workExpCardSubTitle">Infosys</h3>
-          </div>
-          <div>
-            <span class="workExpCardDate">July 2021 - Current</span>
+          <div class="rightRibbon">
+            <img src="/assets/images/ribbon-right.png">
           </div>
         </div>
-        <div class="workExpCardParagraph">
-          Working on converting POCs to full scale products from scratch at BYJU'S Labs.
-          <ol>
-            <li>
-              <b>Web QnA</b>
-              <ul>
-                <li>Lead developer at BYJU'S web QnA platform.&nbsp;(<a href="https://byjus.com/question-answer" target="_blank">https://byjus.com/question-answer</a>). With over <b>120k unique google indexed pages</b>, this platform allows anyone to search for solutions to questions from Indian textbooks.</li>
-                <li>Built on <b>Next.JS</b> frontend and <b>MongoDB/Flask</b> backend.</li>
-                <li>Initially built independently as a POC, then scaled up to serve <b>500k user sessions per day</b>, and an average traffic of <b>3-4M users per month</b>.</li>
-                <li>Worked on <b>improving page performance (LCP, FCP, CLS, Speed Index)</b> to improve SEO rankings.</li>
-                <li>Improved page speed by <b>optimizing code, making APIs faster</b> and working with devops to <b>setup servers at strategic locations</b>.</li>
-                <li>Leading & <b>mentoring a team of 5 developers</b> to maintain and improve this website.</li>
-                <li>Working closely with the product team to <b>generate data visualizations and reports</b>.</li>
-              </ul>
-            </li>
-          </ol>
+        <div class="nameContainer">
+          <div class="text-shadows">Arjun<br>Ramesan</div>
         </div>
-    </div>
-    <div class="workExpCard">
-      <div class="workExpCardHeading">
-        <div>
-          <div class="workExpCardImage" style="background-image: url(Assets/Images/workex/infosys.png)"></div>
-        </div>
-        <div>
-          <h3 class="workExpCardTitle">Systems Engineer</h3>
-          <h3 class="workExpCardSubTitle">Infosys</h3>
-        </div>
-        <div>
-          <span class="workExpCardDate">July 2021 - Current</span>
-        </div>
+        <!-- <div class="introButtoNHolder">
+          <div>Begin</div>
+          <div>Textual Resume</div>
+        </div> -->
       </div>
-      <div class="workExpCardParagraph">
-        Working on converting POCs to full scale products from scratch at BYJU'S Labs.
-        <ol>
-          <li>
-            <b>Web QnA</b>
-            <ul>
-              <li>Lead developer at BYJU'S web QnA platform.&nbsp;(<a href="https://byjus.com/question-answer" target="_blank">https://byjus.com/question-answer</a>). With over <b>120k unique google indexed pages</b>, this platform allows anyone to search for solutions to questions from Indian textbooks.</li>
-              <li>Built on <b>Next.JS</b> frontend and <b>MongoDB/Flask</b> backend.</li>
-              <li>Initially built independently as a POC, then scaled up to serve <b>500k user sessions per day</b>, and an average traffic of <b>3-4M users per month</b>.</li>
-              <li>Worked on <b>improving page performance (LCP, FCP, CLS, Speed Index)</b> to improve SEO rankings.</li>
-              <li>Improved page speed by <b>optimizing code, making APIs faster</b> and working with devops to <b>setup servers at strategic locations</b>.</li>
-              <li>Leading & <b>mentoring a team of 5 developers</b> to maintain and improve this website.</li>
-              <li>Working closely with the product team to <b>generate data visualizations and reports</b>.</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-  </div>
-    </div>
-  </section>
+      
+      <!-- Trees -->
+     <img class="tree" id="tree_1" src="assets/images/tree-bright-d.png">
+     <img class="tree" id="tree_3" src="assets/images/tree-bright-e.png">
+     <img class="tree" id="tree_2" src="assets/images/tree-dark-a.png">
+     <img class="tree" id="tree_4" src="assets/images/tree-dark-b.png">
 
-  <section class="detailsSection">
-    <h2 class="detailsTitle">Skills</h2>
-    <!-- Frontend Skills -->
-    <div class="detailsSubSection">
-      <h3 class="detailsSubTitle">Frontend</h3>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/nextjs-min.png)"></div>
-        <div class="skillCardText">Next JS</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/react-min.png)"></div>
-        <div class="skillCardText">React JS</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/angular-min.png)"></div>
-        <div class="skillCardText">Angular</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/html-min.png)"></div>
-        <div class="skillCardText">HTML5</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/css-min.png)"></div>
-        <div class="skillCardText">CSS3</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/js-min.png)"></div>
-        <div class="skillCardText">JavaScript</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/ts-min.png)"></div>
-        <div class="skillCardText">TypeScript</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/jquery-min.png)"></div>
-        <div class="skillCardText">Jquery</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/npm.png)"></div>
-        <div class="skillCardText">Package Creation</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/sass-min.png)"></div>
-        <div class="skillCardText">Sass</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/bootstrap-min.png)"></div>
-        <div class="skillCardText">Bootstrap</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/tailwind-min.png)"></div>
-        <div class="skillCardText">Tailwind</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/aframe-min.png)"></div>
-        <div class="skillCardText">Aframe</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/threejs-min.png)"></div>
-        <div class="skillCardText">Three JS</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/gsap-min.png)"></div>
-        <div class="skillCardText">GSAP</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/socket-min.png)"></div>
-        <div class="skillCardText">Socket.io</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/puppeteer.png)"></div>
-        <div class="skillCardText">Puppeteer</div>
-      </div>
     </div>
-    <!-- Backend Skills -->
-    <div class="detailsSubSection">
-      <!-- Backend Skills -->
-      <h3 class="detailsSubTitle">Backend & Database</h3>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/flask-min.png)"></div>
-        <div class="skillCardText">Flask</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/mongo-min.png)"></div>
-        <div class="skillCardText">MongoDB</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/postgress-min.png)"></div>
-        <div class="skillCardText">PostgreSQL</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/mysql-min.png)"></div>
-        <div class="skillCardText">MySQL</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/dynamo-min.png)"></div>
-        <div class="skillCardText">DynamoDB</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/nodejs.png)"></div>
-        <div class="skillCardText">NodeJS</div>
-      </div>
-      <div class="skillCard">
-        <div class="skillCardImage" style="background-image: url(Assets/Images/skills/redis.png)"></div>
-        <div class="skillCardText">Redis</div>
-      </div>
+    <div class="ground">
+      <div class="grass"></div>
+      <div class="earth"></div>
     </div>
-    <!-- Other Skills -->
-    <div class="detailsSubSection">
-      <!-- Backend Skills -->
-      <h3 class="detailsSubTitle">Others</h3>
-      <div class="cardHolder">
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/postman.png)"></div>
-          <div class="skillCardText">Postman</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/github.png)"></div>
-          <div class="skillCardText">GitHub</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/jenkins.png)"></div>
-          <div class="skillCardText">Jenkins</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/ec2.png)"></div>
-          <div class="skillCardText">AWS EC2</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/s3.png)"></div>
-          <div class="skillCardText">AWS S3</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/beanstalk.png)"></div>
-          <div class="skillCardText">Elastic Beanstalk</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/analytics.png)"></div>
-          <div class="skillCardText">Google Analytics</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/searchconsole.png)"></div>
-          <div class="skillCardText">Search Console</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/lighthouse.png)"></div>
-          <div class="skillCardText">Google Lighthouse</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/clarity.png)"></div>
-          <div class="skillCardText">Microsoft Clarity</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/opencv.png)"></div>
-          <div class="skillCardText">OpenCV</div>
-        </div>
-        <div class="skillCard">
-          <div class="skillCardImage" style="background-image: url(Assets/Images/skills/openpose.png)"></div>
-          <div class="skillCardText">Open Pose</div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
-
+  </body>
 </html>
