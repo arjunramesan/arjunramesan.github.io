@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arjun Ramesan | Play</title>
-</head>
-<body>
-    
-</body>
+    <meta name="description" content="Arjun Ramesan's portfolio website" />
+
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="play.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K19HTRVT4E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K19HTRVT4E");
+    </script>
+  </head>
+  <body>
+    <div class="sky">
+      <!-- Clouds -->
+      <img class="cloud" id="cloud_1" src="/assets/images/cloud.png" />
+      <img class="cloud" id="cloud_2" src="/assets/images/cloud.png" />
+
+      <!-- Trees -->
+      <img class="tree" id="tree_1" src="assets/images/tree_1.png" />
+      <img class="tree" id="tree_3" src="assets/images/tree_2.png" />
+
+      <!-- Rock -->
+      <img class="rock" id="rock_1" src="assets/images/rock_1.png" />
+
+      <!-- Bush -->
+      <img class="bush" id="bush_1" src="assets/images/bush_1.png" />
+    </div>
+
+
+    <!-- Arjun -->
+    <img src="/assets/images/character/idle.gif" id="arjun">
+
+    <div class="ground">
+        
+      <div class="mountain4"></div>
+      <div class="mountain3"></div>
+      <div class="mountain2"></div>
+      <div class="mountain1"></div>
+      <div class="grass1"></div>
+      <div class="earth"></div>
+      <div class="grass2"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="play.js"></script>
+  </body>
 </html>
