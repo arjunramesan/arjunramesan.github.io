@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #03bff3;
-  background-image: url("assets/images/background.png");
+  background-image: url("../assets/images/background.png");
   overflow: hidden;
 }
 
@@ -31,7 +31,7 @@
 
 .grass1 {
   height: 50px;
-  background-image: url("/assets/images/grass_1.png");
+  background-image: url("../assets/images/grass_1.png");
   position: absolute;
   width: 100%;
   background-repeat: repeat;
@@ -42,7 +42,7 @@
 
 .grass2 {
   height: 15px;
-  background-image: url("/assets/images/grass_2.png");
+  background-image: url("../assets/images/grass_2.png");
   position: absolute;
   width: 100%;
   background-repeat: repeat;
@@ -56,7 +56,7 @@
   bottom: 100px;
   width: 100%;
   height: 200px;
-  background-image: url(/assets/images/mountains_1.png);
+  background-image: url("../assets/images/mountains_1.png");
   background-repeat: repeat;
   background-size: contain;
   z-index: 0;
@@ -64,7 +64,7 @@
 
 .earth {
   height: 100px;
-  background-image: url("/assets/images/ground.png");
+  background-image: url("../assets/images/ground.png");
   background-repeat: repeat;
   background-size: contain;
   position: absolute;
@@ -83,6 +83,11 @@
 
 .introContainer{
   z-index: 3;
+  padding: 50px;
+  border: solid 5px white;
+  border-radius: 10px;
+  background: rgb(255,255,255,0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .introTextHolder {
@@ -138,12 +143,14 @@
 }
 
 .introButtonHolder {
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
 }
 
 .popup-button {
   font-size: 20px;
+  text-decoration: none;
+  margin: 5px;
   border: none;
   padding: 16px 40px 16px 40px;
   border-radius: 5px;
@@ -175,15 +182,14 @@
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
-
-  .introContainer {
-    padding-bottom: 300px;
-  }
-
   .popup-button {
     margin: auto;
     display: block;
     margin-top: 30px;
+  }
+
+  .introTextHolder {
+    font-size: 20px;
   }
 
   .mountain1 {
