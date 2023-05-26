@@ -1,116 +1,66 @@
-body {
-  background-color: #03bff3;
-  height: 100vh;
-  width: 100vw;
-}
-
-.sky {
+.container {
   position: relative;
-  height: calc(100vh - 150px);
+  height: calc(100vh);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #03bff3;
+  background-image: url("assets/images/background.png");
+  overflow: hidden;
 }
 
-.cloud {
+.clouds_bg {
   position: absolute;
-  z-index: -1;
-}
-
-#cloud_1 {
-  left: 100px;
-  top: 20px;
-  height: 200px;
-}
-
-#cloud_2 {
-  right: 100px;
-  top: 300px;
-  height: 100px;
-}
-
-.rock{
-  position: absolute;
-  bottom: -40px;
-}
-
-#rock_1{
-  left: 20px;
-  width: 100px;
-}
-
-.ground {
-  position: relative;
-  height: 150px;
+  bottom: 0px;
+  z-index: 0;
   width: 100%;
 }
 
+
+.rock {
+  position: absolute;
+  bottom: 80px;
+}
+
+#rock_1 {
+  right: 100px;
+  width: 100px;
+  z-index: 5;
+}
+
+
 .grass1 {
   height: 50px;
-  background-image: url("/assets/images/grass1.png");
+  background-image: url("/assets/images/grass_1.png");
   position: absolute;
   width: 100%;
   background-repeat: repeat;
   background-size: contain;
-  z-index: -1;
+  z-index: 4;
   bottom: 55px;
 }
 
 .grass2 {
-  height: 80px;
+  height: 15px;
   background-image: url("/assets/images/grass_2.png");
   position: absolute;
   width: 100%;
   background-repeat: repeat;
-  background-size: contain;
-  z-index: -2;
-  bottom: 80px;
+  background-size: cover;
+  z-index: 3;
+  bottom: 98px;
 }
 
-.mountain1{
+.mountain1 {
   position: absolute;
-  bottom: 150px;
+  bottom: 100px;
   width: 100%;
-  height: 80px;
-  background-image: url("/assets/images/mountains_1.png");
+  height: 200px;
+  background-image: url(/assets/images/mountains_1.png);
   background-repeat: repeat;
   background-size: contain;
-  z-index: -3;
+  z-index: 0;
 }
-
-.mountain2{
-  position: absolute;
-  bottom: 150px;
-  width: 100%;
-  height: 180px;
-  background-image: url("/assets/images/mountains_2.png");
-  background-repeat: repeat;
-  background-size: contain;
-  z-index: -4;
-}
-
-.mountain3{
-  position: absolute;
-  bottom: 150px;
-  width: 100%;
-  height: 250px;
-  background-image: url("/assets/images/mountains_3.png");
-  background-repeat: repeat;
-  background-size: contain;
-  z-index: -4;
-}
-
-.mountain4{
-  position: absolute;
-  bottom: 150px;
-  width: 100%;
-  height: 350px;
-  background-image: url("/assets/images/mountains_4.png");
-  background-repeat: repeat;
-  background-size: contain;
-  z-index: -4;
-}
-
 
 .earth {
   height: 100px;
@@ -127,9 +77,17 @@ body {
   display: flex;
 }
 
+.introRibbon div {
+  z-index: 3;
+}
+
+.introContainer{
+  z-index: 3;
+}
+
 .introTextHolder {
   display: flex;
-  background: #ed1c25;
+  background: #c00f17;
   color: white;
   height: 49px;
   font-family: 'Lobster', cursive;
@@ -146,34 +104,35 @@ body {
 
 .tree {
   position: absolute;
-  bottom: -5px;
-  z-index: -2;
+  bottom: 90px;
+  z-index: 0;
 }
 
 #tree_1 {
-  right: 10px;
-  width: 300px;
+  right: 0px;
+  width: 550px;
+  z-index: 2;
 }
 
 #tree_2 {
-  left: 110px;
+  left: -80px;
+  width: 700px;
+  z-index: 1;
 }
 
 #tree_3 {
-  left: 10px;
+  left: 800px;
+  width: 700px;
+  z-index: 1;
 }
 
-#tree_4 {
-  right: 10px;
-}
-
-.bush{
+.bush {
   position: absolute;
   bottom: -5px;
-  z-index: -2;
+  z-index: 0;
 }
 
-#bush_1{
+#bush_1 {
   left: 100px;
   width: 100px;
 }
@@ -188,14 +147,17 @@ body {
   border: none;
   padding: 16px 40px 16px 40px;
   border-radius: 5px;
-  background: #d03651;
-  box-shadow: 0px 10px 0px 0px #a72b41, 0px 0px 10px 0px rgba(120, 120, 120, 0.4);;
+  background: #c03a51;
+  box-shadow: 0px 10px 0px 0px #a72b41, 0px 0px 10px 0px rgba(120, 120, 120, 0.4);
+  ;
   color: white;
   cursor: pointer;
   transition: all 0.16s;
   position: relative;
   top: 0;
   font-family: 'Bungee';
+  z-index: 3;
+
 }
 
 .popup-button:focus {
@@ -214,35 +176,66 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-  #cloud_1 {
-    left: 70px;
-    height: 100px;
+  .introContainer {
+    padding-bottom: 300px;
   }
 
-  #cloud_2 {
-    top: 200px;
-    height: 50px;
+  .popup-button {
+    margin: auto;
+    display: block;
+    margin-top: 30px;
   }
 
+  .mountain1 {
+    background-size: cover;
+    bottom: 80px;
+  }
 
-  #tree_1 {
-    right: 110px;
-    width: 60px;
-}
+  .clouds_bg {
+    bottom: 200px;
+  }
+
+  #rock_1 {
+    right: 10px;
+    width: 40px;
+  }
+
+  .grass2 {
+    bottom: 74px;
+  }
+
+  .tree {
+    bottom: 78px;
+  }
+
+  #tree_3 {
+    width: 200px;
+    display: none;
+  }
 
   #tree_2 {
-    left: 60px;
-    width: 70px;
-}
+    width: 200px;
+  }
 
-#tree_3 {
-  left: 10px;
-  width: 100px;
-}
+  #tree_1 {
+    width: 250px;
+    z-index: 1;
+  }
 
-  #tree_4 {
-    right: 10px;
-    width: 110px;
-}
+  .rock {
+    bottom: 65px;
+  }
+
+  .earth {
+    height: 80px;
+  }
+
+
+  .grass1 {
+    height: 28px;
+    background-size: cover;
+    bottom: 55px;
+  }
+
 
 }
