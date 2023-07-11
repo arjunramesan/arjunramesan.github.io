@@ -33,12 +33,25 @@ scrollContainer.addEventListener("wheel", (evt) => {
     }, 60);
 
 
+    console.log(scrollContainer.scrollLeft)
+
     // Intro Section Animation
-    if(scrollContainer.scrollLeft > 2500){
+    if(scrollContainer.scrollLeft > 1900){
         document.getElementsByClassName('introImage1')[0].style.animation = "introCardAnimation 1s forwards";
         document.getElementsByClassName('introImage2')[0].style.animation = "introCardAnimation 1s forwards";
         document.getElementsByClassName('introImage2')[0].style.animationDelay = "0.2s"
     }
 
+    // Work Ex Animation
+    if(scrollContainer.scrollLeft > 3400){
+        document.getElementsByClassName('workExBuilding1')[0].style.animation = "workExBuildingAnimation 1s forwards";
+        document.getElementsByClassName('workExText1')[0].style.animation = "introCardAnimation 1s forwards";
+        document.getElementsByClassName('workExText1')[0].style.animationDelay = "0.8s"
+    }
+    if(scrollContainer.scrollLeft > 4700){
+        document.getElementsByClassName('workExBuilding2')[0].style.animation = "workExBuildingAnimation 1s forwards";
+        document.getElementsByClassName('workExText2')[0].style.animation = "introCardAnimation 1s forwards";
+        document.getElementsByClassName('workExText2')[0].style.animationDelay = "0.8s"
+    }
 });
 ////

@@ -23,24 +23,23 @@ main {
 }
 
 section {
-    min-width: 2000px;
+    min-width: var(--total-width);
     height: 100vh;
     position: relative;
-    /* border-right: solid 1px red; */
 }
 
 .introBox{
     position: absolute;
     width: 500px;
     left: calc(50vw - 250px);
-    top: 20vh;
+    bottom: 300px;
     padding: 50px;
     text-align: center;
     border: solid 5px #676767;
     border-radius: 10px;
     background: rgb(252 254 252);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 10;
+    z-index: 4;
     line-height: 25px;
 }
 
@@ -78,37 +77,59 @@ section {
 }
 
 #rock_2 {
-    right: 20px;
+    left: 2970px;
     width: 80px;
     z-index: 5;
 }
 
-.sectionTitleTop{
+.sectionTitleTop1{
     position: absolute;
     font-size: 150px;
     color: white;
     bottom: 150px;
     font-family: 'Pacifico', cursive;
-    left: 0;
+    left: 1700px;
     text-shadow: #000 1px 0 10px;
     z-index: 2;
 }
 
-.sectionTitleBottom{
+.sectionTitleBottom1{
     position: absolute;
     font-size: 150px;
     color: white;
     bottom: 20px;
     font-family: 'Pacifico', cursive;
-    left: 300px;
+    left: 2000px;
+    z-index: 5;
+    text-shadow: #000 1px 0 10px;
+}
+
+.sectionTitleTop2{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    bottom: 150px;
+    font-family: 'Pacifico', cursive;
+    left: 3400px;
+    text-shadow: #000 1px 0 10px;
+    z-index: 2;
+}
+
+.sectionTitleBottom2{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    left: 3600px;
     z-index: 5;
     text-shadow: #000 1px 0 10px;
 }
 
 .sectionAboutMeContent{
     position: absolute;
-    left: 700px;
-    top: 100px;
+    left: 2200px;
+    bottom: 550px;
     z-index: 9;
 }
 
@@ -125,6 +146,7 @@ section {
     font-size: 20px;
 }
 
+
 .introImage1 img, .introImage2 img{
     width: 100%;
 }
@@ -134,7 +156,7 @@ section {
     width: 150px;
     background-color: white;
     position: absolute;
-    left: 1484px;
+    left: 2984px;
     bottom: 310px;
     overflow: hidden;
     border-radius: 5px;
@@ -154,7 +176,7 @@ section {
     width: 150px;
     background-color: white;
     position: absolute;
-    left: 1600px;
+    left: 3100px;
     bottom: 275px;
     overflow: hidden;
     border-radius: 5px;
@@ -168,6 +190,56 @@ section {
     font-size: 10px;
     text-align: center;
 }
+
+.workExBuilding1{
+    position: absolute;
+    width: 500px;
+    bottom: 100vh;
+    left: 4300px;
+}
+
+.workExText1{
+    position: absolute;
+    width: 500px;
+    left: 4820px;
+    bottom: 350px;
+    padding: 10px;
+    border: solid 5px #676767;
+    border-radius: 10px;
+    background: rgb(252 254 252 / 85%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 4;
+    scale: 0;
+}
+
+.workExBuilding2{
+    position: absolute;
+    width: 550px;
+    bottom: 100vh;
+    left: 5400px;
+}
+
+.workExText2{
+    position: absolute;
+    width: 500px;
+    left: 5980px;
+    bottom: 530px;
+    padding: 10px;
+    border: solid 5px #676767;
+    border-radius: 10px;
+    background: rgb(252 254 252 / 85%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 4;
+    scale: 0;
+}
+
+
+@keyframes workExBuildingAnimation {
+    0% {bottom: 100vh}
+    80% {bottom:  80px}
+    100% {bottom:  100px}
+  }
+
 
 
 
@@ -234,25 +306,25 @@ section {
 }
 
 #tree_3 {
-    left: 1100px;
+    left: 1400px;
     width: 700px;
     z-index: 1;
 }
 
 #tree_4 {
-    left: 1600px;
+    left: 2990px;
     width: 700px;
     z-index: 1;
 }
 
 #tree_5 {
-    left: 40px;
+    left: 5970px;
     width: 900px;
     z-index: 1;
 }
 
 #tree_6 {
-    left: 1200px;
+    left: 1800px;
     width: 400px;
     z-index: 1;
 }
