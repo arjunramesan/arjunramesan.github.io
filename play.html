@@ -9,7 +9,13 @@
 
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/play.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -26,24 +32,55 @@
   </head>
   <body>
     <main>
+      <!-- Commons -->
+      <div class="clouds_bg" id="cloud_1"></div>
+      <img src="/assets/images/character/walk.gif" class="arjun" id="arjun_walking" />
+      <img src="/assets/images/character/idle.gif" class="arjun" id="arjun_idle" />
+      <div class="mountain1"></div>
+      <div class="grass1"></div>
+      <div class="earth"></div>
+      <div class="grass2"></div>
+
+      <!-- Sections -->
       <section>
-        <img src="/assets/images/character/walk.gif" class="arjun" id="arjun_walking" />
-        <img src="/assets/images/character/idle.gif" class="arjun" id="arjun_idle" />
-
-        <div class="clouds_bg" id="cloud_1"></div>
-
-
         <img class="tree" id="tree_1" src="assets/images/tree_1.png" />
         <img class="tree" id="tree_2" src="assets/images/tree_2.png" />
         <img class="tree" id="tree_3" src="assets/images/tree_3.png" />
-
         <img class="rock" id="rock_1" src="assets/images/rock_1.png" />
+        <div class="introBox">
+          <div class="title">Instructions - </div>
+          <div>
+            <div><img class="scrollIcon" src="assets/images/scroll.gif"></div>
+            <div>Scroll <u>down</u> to move the character <u>forward</u>.</div>
+            <div>Scroll <u>up</u> to move the character <u>backward</u>.</div>
+            <div>Click on <u>interaction icon</u> to interact with the objects.</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sectionTitleTop">about</div>
+        <div class="sectionTitleBottom">me</div>
 
-        <div class="mountain1"></div>
+        <div class="sectionAboutMeContent">
+            <div class="text1">5+ years</div>
+            <div class="text2">Of successful product-building experience as a <u>Full Stack Developer</u>, based out of Bangalore.</div>
+        </div>
 
-        <div class="grass1"></div>
-        <div class="earth"></div>
-        <div class="grass2"></div>
+        <div class="introImage1"><img src="assets/images/intro/bangalore_icon_1.jpg"><div class="introImageText">Bangalore Palace</div></div>
+        <div class="introImage2"><img src="assets/images/intro/bangalore_icon_2.jpg"><div class="introImageText">Vidhana Soudha</div></div>
+
+
+        <img class="tree" id="tree_4" src="assets/images/tree_1.png" />
+        <img class="tree" id="tree_5" src="assets/images/tree_2.png" />
+        <img class="rock" id="rock_2" src="assets/images/rock_1.png" />
+      </section>
+      <section>
+        <div class="sectionTitleTop">work</div>
+        <div class="sectionTitleBottom">experience</div>
+        <!-- <img class="tree" id="tree_4" src="assets/images/tree_1.png" />
+        <img class="tree" id="tree_5" src="assets/images/tree_2.png" />
+        <img class="tree" id="tree_6" src="assets/images/tree_3.png" />
+        <img class="rock" id="rock_2" src="assets/images/rock_1.png" /> -->
       </section>
     </main>
 

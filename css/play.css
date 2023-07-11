@@ -1,3 +1,7 @@
+:root {
+    --total-width: 40000px;
+}
+
 .arjun {
     position: fixed;
     bottom: 88px;
@@ -10,25 +14,51 @@
 
 main {
     overflow-x: hidden;
-}
-
-section {
-    min-width: 400vw;
-    height: 100vh;
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    width: 100%;
     background-color: #8ed9c7;
     background-image: url("../assets/images/background.png");
 }
 
+section {
+    min-width: 2000px;
+    height: 100vh;
+    position: relative;
+    /* border-right: solid 1px red; */
+}
+
+.introBox{
+    position: absolute;
+    width: 500px;
+    left: calc(50vw - 250px);
+    top: 20vh;
+    padding: 50px;
+    text-align: center;
+    border: solid 5px #676767;
+    border-radius: 10px;
+    background: rgb(252 254 252);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10;
+    line-height: 25px;
+}
+
+.introBox .title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.scrollIcon{
+    width: 100px;
+    margin: 20px;
+}
 
 .clouds_bg {
     height: 80vh;
     background-image: url("../assets/images/clouds_1.png");
     position: absolute;
-    width: 100%;
+    width: var(--total-width);
     background-repeat: repeat;
     background-size: contain;
     z-index: 0;
@@ -47,12 +77,105 @@ section {
     z-index: 5;
 }
 
+#rock_2 {
+    right: 20px;
+    width: 80px;
+    z-index: 5;
+}
+
+.sectionTitleTop{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    bottom: 150px;
+    font-family: 'Pacifico', cursive;
+    left: 0;
+    text-shadow: #000 1px 0 10px;
+    z-index: 2;
+}
+
+.sectionTitleBottom{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    left: 300px;
+    z-index: 5;
+    text-shadow: #000 1px 0 10px;
+}
+
+.sectionAboutMeContent{
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    z-index: 9;
+}
+
+.sectionAboutMeContent .text1{
+    color: white;
+    font-weight: bold;
+    font-size: 150px;
+}
+
+.sectionAboutMeContent .text2{
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.introImage1 img, .introImage2 img{
+    width: 100%;
+}
+
+.introImage1{
+    height: 190px;
+    width: 150px;
+    background-color: white;
+    position: absolute;
+    left: 1484px;
+    bottom: 310px;
+    overflow: hidden;
+    border-radius: 5px;
+    transform: rotate(4deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scale: 0;
+}
+
+@keyframes introCardAnimation {
+    0% {scale: 0}
+    50% {scale:  1.1}
+    100% {scale:  1}
+  }
+
+.introImage2{
+    height: 190px;
+    width: 150px;
+    background-color: white;
+    position: absolute;
+    left: 1600px;
+    bottom: 275px;
+    overflow: hidden;
+    border-radius: 5px;
+    transform: rotate(21deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scale: 0;
+}
+
+.introImageText{
+    font-family: 'Pacifico', cursive;
+    font-size: 10px;
+    text-align: center;
+}
+
+
 
 .grass1 {
     height: 50px;
     background-image: url("../assets/images/grass_1.png");
     position: absolute;
-    width: 100%;
+    width: var(--total-width);
     background-repeat: repeat;
     background-size: contain;
     z-index: 4;
@@ -63,7 +186,7 @@ section {
     height: 15px;
     background-image: url("../assets/images/grass_2.png");
     position: absolute;
-    width: 100%;
+    width: var(--total-width);
     background-repeat: repeat;
     background-size: contain;
     z-index: 3;
@@ -73,7 +196,7 @@ section {
 .mountain1 {
     position: absolute;
     bottom: 100px;
-    width: 100%;
+    width: var(--total-width);
     height: 200px;
     background-image: url("../assets/images/mountains_1.png");
     background-repeat: repeat;
@@ -88,7 +211,7 @@ section {
     background-size: contain;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: var(--total-width);
     z-index: 0;
 }
 
@@ -111,8 +234,26 @@ section {
 }
 
 #tree_3 {
-    left: 800px;
+    left: 1100px;
     width: 700px;
+    z-index: 1;
+}
+
+#tree_4 {
+    left: 1600px;
+    width: 700px;
+    z-index: 1;
+}
+
+#tree_5 {
+    left: 40px;
+    width: 900px;
+    z-index: 1;
+}
+
+#tree_6 {
+    left: 1200px;
+    width: 400px;
     z-index: 1;
 }
 

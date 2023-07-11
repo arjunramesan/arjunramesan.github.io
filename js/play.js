@@ -32,6 +32,13 @@ scrollContainer.addEventListener("wheel", (evt) => {
         character_walking.style.display = 'none'
     }, 60);
 
+
+    // Intro Section Animation
+    if(scrollContainer.scrollLeft > 2500){
+        document.getElementsByClassName('introImage1')[0].style.animation = "introCardAnimation 1s forwards";
+        document.getElementsByClassName('introImage2')[0].style.animation = "introCardAnimation 1s forwards";
+        document.getElementsByClassName('introImage2')[0].style.animationDelay = "0.2s"
+    }
+
 });
 ////
-
