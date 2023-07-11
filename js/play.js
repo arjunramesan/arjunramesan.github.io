@@ -1,35 +1,37 @@
-console.log('hello')
+console.log('hello world..')
 
-// Setup isScrolling variable
-var isScrolling;
-var currentScrolling = false;
-var oldScrollX = window.scrollX;
 
-window.addEventListener('scroll', function ( event ) {
+// Walking Animation //
+var timer = null;
+var character_walking = document.getElementById('arjun_walking')
+var character_idle = document.getElementById('arjun_idle')
+const scrollContainer = document.querySelector("main");
 
-	// Clear our timeout throughout the scroll
-	window.clearTimeout( isScrolling );
+character_idle.style.display = 'block'
 
-    if(currentScrolling == false){
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    character_walking.style.display = 'block'
+    character_idle.style.display = 'none'
 
-        if(oldScrollX <= window.scrollX){
-            document.getElementById('arjun').style.transform = 'scaleX(1)'
-        }
-        
-        else{
-            document.getElementById('arjun').style.transform = 'scaleX(-1)'
-        }
-        document.getElementById('arjun').src = "/assets/images/character/walk.gif";
+    if(evt.deltaY > 0){
+        character_walking.style.transform = 'scaleX(1)'
+        character_idle.style.transform = 'scaleX(1)'
     }
-    currentScrolling = true;
+    else{
+        character_walking.style.transform = 'scaleX(-1)'
+        character_idle.style.transform = 'scaleX(-1)'
+    }
+    scrollContainer.scrollLeft += evt.deltaY;
 
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
-		// Run the callback
-		document.getElementById('arjun').src = "/assets/images/character/idle.gif";
-        oldScrollX = window.scrollX;
-        currentScrolling = false;
+    if(timer !== null) {
+        clearTimeout(timer);       
+    }
+    timer = setTimeout(function() {
+        character_idle.style.display = 'block'
+        character_walking.style.display = 'none'
+    }, 60);
 
-	}, 60);
+});
+////
 
-}, false);
