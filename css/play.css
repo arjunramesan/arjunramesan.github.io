@@ -126,6 +126,58 @@ section {
     text-shadow: #000 1px 0 10px;
 }
 
+.sectionTitleTop3{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    bottom: 150px;
+    font-family: 'Pacifico', cursive;
+    left: 6500px;
+    text-shadow: #000 1px 0 10px;
+    z-index: 2;
+}
+
+.sectionTitleBottom3{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    left: 6700px;
+    z-index: 5;
+    text-shadow: #000 1px 0 10px;
+}
+
+.projectCinema1{
+    position: absolute;
+    left: 7400px;
+    bottom: 100px;
+    width: 600px;
+    z-index: 2;
+}
+
+.projectCinema1_image1{
+    position: absolute;
+    left: 7425px;
+    bottom: 190px;
+    width: 550px;
+    z-index: 2;
+}
+
+.workExText3{
+    position: absolute;
+    width: 500px;
+    left: 8007px;
+    bottom: 384px;
+    padding: 10px;
+    border: solid 5px #676767;
+    border-radius: 10px;
+    background: rgb(252 254 252 / 85%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 4;
+}
+
+
 .sectionAboutMeContent{
     position: absolute;
     left: 2200px;

@@ -43,12 +43,12 @@ scrollContainer.addEventListener("wheel", (evt) => {
     }
 
     // Work Ex Animation
-    if(scrollContainer.scrollLeft > 3400){
+    if(scrollContainer.scrollLeft > 3300){
         document.getElementsByClassName('workExBuilding1')[0].style.animation = "workExBuildingAnimation 1s forwards";
         document.getElementsByClassName('workExText1')[0].style.animation = "introCardAnimation 1s forwards";
         document.getElementsByClassName('workExText1')[0].style.animationDelay = "0.8s"
     }
-    if(scrollContainer.scrollLeft > 4700){
+    if(scrollContainer.scrollLeft > 4400){
         document.getElementsByClassName('workExBuilding2')[0].style.animation = "workExBuildingAnimation 1s forwards";
         document.getElementsByClassName('workExText2')[0].style.animation = "introCardAnimation 1s forwards";
         document.getElementsByClassName('workExText2')[0].style.animationDelay = "0.8s"
