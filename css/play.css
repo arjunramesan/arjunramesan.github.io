@@ -178,6 +178,65 @@ section {
 }
 
 
+.projectCinema2{
+    position: absolute;
+    left: 8600px;
+    bottom: 100px;
+    width: 600px;
+    z-index: 2;
+}
+
+.projectCinema2_image1{
+    position: absolute;
+    left: 8625px;
+    bottom: 190px;
+    width: 550px;
+    z-index: 2;
+}
+
+.workExText4{
+    position: absolute;
+    width: 500px;
+    left: 9207px;
+    bottom: 384px;
+    padding: 10px;
+    border: solid 5px #676767;
+    border-radius: 10px;
+    background: rgb(252 254 252 / 85%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 4;
+}
+
+
+.projectCinema3{
+    position: absolute;
+    left: 9800px;
+    bottom: 100px;
+    width: 600px;
+    z-index: 2;
+}
+
+.projectCinema3_image1{
+    position: absolute;
+    left: 9825px;
+    bottom: 190px;
+    width: 550px;
+    z-index: 2;
+}
+
+.workExText5{
+    position: absolute;
+    width: 500px;
+    left: 10407px;
+    bottom: 384px;
+    padding: 10px;
+    border: solid 5px #676767;
+    border-radius: 10px;
+    background: rgb(252 254 252 / 85%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 4;
+}
+
 .sectionAboutMeContent{
     position: absolute;
     left: 2200px;
@@ -254,7 +313,7 @@ section {
     position: absolute;
     width: 500px;
     left: 4820px;
-    bottom: 350px;
+    bottom: 239px;
     padding: 10px;
     border: solid 5px #676767;
     border-radius: 10px;
@@ -275,7 +334,7 @@ section {
     position: absolute;
     width: 500px;
     left: 5980px;
-    bottom: 530px;
+    bottom: 300px;
     padding: 10px;
     border: solid 5px #676767;
     border-radius: 10px;
@@ -397,55 +456,8 @@ section {
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
-    .mountain1 {
-        background-size: cover;
-        bottom: 80px;
-    }
-
-    .clouds_bg {
-        bottom: 200px;
-    }
-
-    #rock_1 {
-        right: 10px;
-        width: 40px;
-    }
-
-    .grass2 {
-        bottom: 74px;
-    }
-
-    .tree {
-        bottom: 78px;
-    }
-
-    #tree_3 {
-        width: 200px;
-        display: none;
-    }
-
-    #tree_2 {
-        width: 200px;
-    }
-
-    #tree_1 {
-        width: 250px;
-        z-index: 1;
-    }
-
-    .rock {
-        bottom: 65px;
-    }
-
-    .earth {
-        height: 80px;
-    }
-
-
-    .grass1 {
-        height: 28px;
-        background-size: cover;
-        bottom: 55px;
-    }
-
+   .introBox{
+    width: 300px;
+    left: calc(50vw - 150px);
+   }
 }
