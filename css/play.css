@@ -82,6 +82,12 @@ section {
     z-index: 5;
 }
 
+#rock_3{
+    left: 9970px;
+    width: 80px;
+    z-index: 5;
+}
+
 .sectionTitleTop1{
     position: absolute;
     font-size: 150px;
@@ -148,6 +154,28 @@ section {
     text-shadow: #000 1px 0 10px;
 }
 
+.sectionTitleTop4{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    bottom: 150px;
+    font-family: 'Pacifico', cursive;
+    left: 11100px;
+    text-shadow: #000 1px 0 10px;
+    z-index: 2;
+}
+
+.sectionTitleBottom4{
+    position: absolute;
+    font-size: 150px;
+    color: white;
+    bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    left: 11300px;
+    z-index: 5;
+    text-shadow: #000 1px 0 10px;
+}
+
 .projectCinema1{
     position: absolute;
     left: 7400px;
@@ -168,7 +196,7 @@ section {
     position: absolute;
     width: 500px;
     left: 8007px;
-    bottom: 384px;
+    bottom: 230px;
     padding: 10px;
     border: solid 5px #676767;
     border-radius: 10px;
@@ -198,7 +226,7 @@ section {
     position: absolute;
     width: 500px;
     left: 9207px;
-    bottom: 384px;
+    bottom: 230px;
     padding: 10px;
     border: solid 5px #676767;
     border-radius: 10px;
@@ -228,7 +256,7 @@ section {
     position: absolute;
     width: 500px;
     left: 10407px;
-    bottom: 384px;
+    bottom: 230px;
     padding: 10px;
     border: solid 5px #676767;
     border-radius: 10px;
@@ -236,6 +264,34 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 4;
 }
+
+.skilLTree1{
+    position: absolute;
+    left: 11900px;
+    bottom: 100px;
+    z-index: 2;
+    width: 550px;
+    filter: contrast(0.90);
+}
+
+.skilLTree2{
+    position: absolute;
+    left: 12700px;
+    bottom: 100px;
+    z-index: 2;
+    width: 550px;
+    filter: contrast(0.90);
+}
+
+.skilLTree3{
+    position: absolute;
+    left: 13500px;
+    bottom: 100px;
+    z-index: 2;
+    width: 550px;
+    filter: contrast(0.90);
+}
+
 
 .sectionAboutMeContent{
     position: absolute;
@@ -440,6 +496,34 @@ section {
     z-index: 1;
 }
 
+#tree_7 {
+    left: 11100px;
+    width: 1000px;
+    z-index: 1;
+}
+
+
+#tree_8 {
+    left: 9800px;
+    width: 900px;
+    z-index: 1;
+}
+
+
+#tree_9 {
+    left: 8600px;
+    width: 800px;
+    z-index: 1;
+}
+
+
+#tree_6 {
+    left: 1800px;
+    width: 900px;
+    z-index: 1;
+}
+
+
 .bush {
     position: absolute;
     bottom: -5px;
@@ -450,6 +534,8 @@ section {
     left: 100px;
     width: 100px;
 }
+
+
 
 
 
