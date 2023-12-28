@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arjun Ramesan | Portfolio</title>
     <meta name="description" content="Arjun Ramesan's portfolio website" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/intro-text-animation.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -26,56 +36,181 @@
     </script>
   </head>
   <body>
-    <div class="container">
-      <!-- Intro Ribbon & Name -->
-      <div class="introContainer">
-        <div class="introRibbon">
-          <div class="leftRibbon">
-            <img src="/assets/images/ribbon-left.png" />
+    <div id="vantaBackground">
+      <div class="bodyContainer">
+        <section class="headerSection">
+          <div class="left">
+            <div class="profileImage"></div>
           </div>
-          <div class="introTextHolder">Interactive Resume Of</div>
-          <div class="rightRibbon">
-            <img src="/assets/images/ribbon-right.png" />
+          <div class="right">
+            <div class="profileName">Arjun Ramesan</div>
+            <div class="profileDesignation">Full Stack Web Developer</div>
           </div>
-        </div>
-        <div class="nameContainer">
-          <div class="text-shadows"><span>Arjun<br />Ramesan</span></div>
-        </div>
-        <div class="introButtonHolder">
-          <a href="/play.html" class="popup-button">
-            Play&nbsp;&nbsp;<i class="fa-solid fa-play"></i>
-          </a>
-          <a href="/resume.html" class="popup-button">
-            View PDF&nbsp;&nbsp;<i class="fa-solid fa-file"></i>
-          </a>
-        </div>
+        </section>
+        <section class="introductionSection">
+          Senior Software Engineer with <b>over 5 years</b> of successful large-scale
+          product-building experience. Results-oriented, experienced mentor, and
+          an expert in rapid prototyping with a strong emphasis on delivering
+          high-quality solutions and fostering collaboration.
+        </section>
+        <section class="importantSection">
+          <div class="importantSectionText">
+            Creator and Lead Developer of India's Largest Ed-Tech Websites.
+          </div>
+          <div class="importantSectionDivHolder">
+            <div class="importantSectionDiv">
+              <img width="100" src="assets/images/byjus.png"  style="--i: 0"/>
+              <div>
+                <div>Byju's QnA : <b>2 Million+</b> Daily users</div>
+                <div class="impoartantSectionUrl">
+                  <a href="https://byjus.com/question-answer/" target="_blank"
+                    >https://byjus.com/question-answer/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="importantSectionDiv">
+              <img width="100" src="assets/images/toppr.webp"  style="--i: 0"/>
+              <div>
+                <div>Toppr : <b>4 Million+</b> Daily Users</div>
+                <div class="impoartantSectionUrl">
+                  <a href="https://www.toppr.com/ask/" target="_blank"
+                    >https://www.toppr.com/ask/</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Skills</h3>
+          <div class="skillsSection">
+            <div class="skillContainer">
+              <div class="skillTitle">Frontend</div>
+              <div class="skillHolder">
+                <div class="skill" style="--i: 0">
+                  <img src="assets/skills/nextjs.png" />
+                  <div>NextJS</div>
+                </div>
+                <div class="skill" style="--i: 1">
+                  <img src="assets/skills/react.png" />
+                  <div>React</div>
+                </div>
+                <div class="skill" style="--i: 2">
+                  <img src="assets/skills/html.png" />
+                  <div>HTML</div>
+                </div>
+                <div class="skill" style="--i: 3">
+                  <img src="assets/skills/css.png" />
+                  <div>CSS</div>
+                </div>
+                <div class="skill" style="--i: 4">
+                  <img src="assets/skills/javascript.png" />
+                  <div>Javascript</div>
+                </div>
+                <div class="skill" style="--i: 5">
+                  <img src="assets/skills/typescript.png" />
+                  <div>Typescript</div>
+                </div>
+                <div class="skill" style="--i: 6">
+                  <img src="assets/skills/tailwind.png" />
+                  <div>Tailwind</div>
+                </div>
+              </div>
+            </div>
+            <div class="skillContainer">
+              <div class="skillTitle">Backend</div>
+              <div class="skillHolder">
+                <div class="skill" style="--i: 0">
+                  <img src="assets/skills/flask.png" />
+                  <div>Flask</div>
+                </div>
+                <div class="skill" style="--i: 1">
+                  <img src="assets/skills/python.png" />
+                  <div>Python</div>
+                </div>
+                <div class="skill" style="--i: 2">
+                  <img src="assets/skills/node.png" />
+                  <div>NodeJS</div>
+                </div>
+                <div class="skill" style="--i: 3">
+                  <img src="assets/skills/golang.png" />
+                  <div>Golang</div>
+                </div>
+              </div>
+            </div>
+            <div class="skillContainer">
+              <div class="skillTitle">Databases</div>
+              <div class="skillHolder">
+                <div class="skill" style="--i: 0">
+                  <img src="assets/skills/postgres.png" />
+                  <div>Postgres</div>
+                </div>
+                <div class="skill" style="--i: 1">
+                  <img src="assets/skills/mongodb.png" />
+                  <div>MongoDB</div>
+                </div>
+                <div class="skill" style="--i: 2">
+                  <img src="assets/skills/mysql.png" />
+                  <div>MySQL</div>
+                </div>
+                <div class="skill" style="--i: 3">
+                  <img src="assets/skills/dynamodb.png" />
+                  <div>DynamoDB</div>
+                </div>
+              </div>
+            </div>
+            <div class="skillContainer">
+              <div class="skillTitle">Miscellaneous</div>
+              <div class="skillHolder">
+                <div class="skill" style="--i: 0">
+                  <img src="assets/skills/redis.png" />
+                  <div>Redis</div>
+                </div>
+                <div class="skill" style="--i: 1">
+                  <img src="assets/skills/docker.png" />
+                  <div>Docker</div>
+                </div>
+                <div class="skill" style="--i: 2">
+                  <img src="assets/skills/jenkins.png" />
+                  <div>Jenkins</div>
+                </div>
+                <div class="skill" style="--i: 3">
+                  <img src="assets/skills/aws.png" />
+                  <div>AWS</div>
+                </div>
+                <div class="skill" style="--i: 4">
+                  <img src="assets/skills/azure.png" />
+                  <div>Azure</div>
+                </div>
+                <div class="skill" style="--i: 5">
+                  <img src="assets/skills/github.png" />
+                  <div>Github</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <!-- Clouds -->
-      <img class="clouds_bg" id="cloud_1" src="assets/images/clouds_1.png" />
-
-      <!-- Trees -->
-      <img class="tree" id="tree_1" src="assets/images/tree_1.png" />
-      <img class="tree" id="tree_2" src="assets/images/tree_2.png" />
-      <img class="tree" id="tree_3" src="assets/images/tree_3.png" />
-
-      <!-- Rock -->
-      <img class="rock" id="rock_1" src="assets/images/rock_1.png" />
-
-      <!-- Mountain -->
-      <div class="mountain1"></div>
-
-      <!-- Ground -->
-      <div class="grass1"></div>
-      <div class="earth"></div>
-      <div class="grass2"></div>
     </div>
-
-    <!-- Scripts -->
-    <script
-      src="https://kit.fontawesome.com/bd9cd361c3.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/index.js"></script>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#vantaBackground",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0xe1e1e1,
+      backgroundColor: 0xffffff,
+      points: 10.0,
+      maxDistance: 20.0,
+      spacing: 18.0,
+    });
+  </script>
 </html>

@@ -1,247 +1,178 @@
-.container {
-  position: relative;
-  height: calc(100vh);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #03bff3;
-  background-image: url("../assets/images/background.png");
-  overflow: hidden;
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
 }
 
-.clouds_bg {
-  position: absolute;
-  bottom: 0px;
-  z-index: 0;
-  width: 100%;
+.bodyContainer{
+    margin:auto;
+    width: 90vw;
+    max-width: 1000px;
+    padding-bottom: 50px;
 }
 
-
-.rock {
-  position: absolute;
-  bottom: 80px;
-}
-
-#rock_1 {
-  right: 100px;
-  width: 100px;
-  z-index: 5;
-}
-
-
-.grass1 {
-  height: 50px;
-  background-image: url("../assets/images/grass_1.png");
-  position: absolute;
-  width: 100%;
-  background-repeat: repeat;
-  background-size: contain;
-  z-index: 4;
-  bottom: 55px;
-}
-
-.grass2 {
-  height: 15px;
-  background-image: url("../assets/images/grass_2.png");
-  position: absolute;
-  width: 100%;
-  background-repeat: repeat;
-  background-size: cover;
-  z-index: 3;
-  bottom: 98px;
-}
-
-.mountain1 {
-  position: absolute;
-  bottom: 100px;
-  width: 100%;
-  height: 200px;
-  background-image: url("../assets/images/mountains_1.png");
-  background-repeat: repeat;
-  background-size: contain;
-  z-index: 0;
-}
-
-.earth {
-  height: 100px;
-  background-image: url("../assets/images/ground.png");
-  background-repeat: repeat;
-  background-size: contain;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: 0;
-}
-
-.introRibbon {
-  display: flex;
-}
-
-.introRibbon div {
-  z-index: 3;
-}
-
-.introContainer{
-  z-index: 3;
-  padding: 50px;
-  border: solid 5px white;
-  border-radius: 10px;
-  background: rgb(255,255,255,0.3);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.introTextHolder {
-  display: flex;
-  background: #c00f17;
-  color: white;
-  height: 49px;
-  font-family: 'Lobster', cursive;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  font-size: 30px;
-}
-
-.leftRibbon,
-.rightRibbon {
-  display: inline-block;
-}
-
-.tree {
-  position: absolute;
-  bottom: 90px;
-  z-index: 0;
-}
-
-#tree_1 {
-  right: 0px;
-  width: 550px;
-  z-index: 2;
-}
-
-#tree_2 {
-  left: -80px;
-  width: 700px;
-  z-index: 1;
-}
-
-#tree_3 {
-  left: 800px;
-  width: 700px;
-  z-index: 1;
-}
-
-.bush {
-  position: absolute;
-  bottom: -5px;
-  z-index: 0;
-}
-
-#bush_1 {
-  left: 100px;
-  width: 100px;
-}
-
-.introButtonHolder {
-  margin-top: 80px;
-  text-align: center;
-}
-
-.popup-button {
-  font-size: 20px;
-  text-decoration: none;
-  margin: 5px;
-  border: none;
-  padding: 16px 40px 16px 40px;
-  border-radius: 5px;
-  background: #c03a51;
-  box-shadow: 0px 10px 0px 0px #a72b41, 0px 0px 10px 0px rgba(120, 120, 120, 0.4);
-  ;
-  color: white;
-  cursor: pointer;
-  transition: all 0.16s;
-  position: relative;
-  top: 0;
-  font-family: 'Bungee';
-  z-index: 3;
+.headerSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
-.popup-button:focus {
-  outline: none;
+#vantaBackground{
+    min-height: 100vh;
 }
 
-.popup-button:active {
-  box-shadow: 0px 5px 0px 0px #a72b41;
-  top: 5px;
+.headerSection .left, .landingSection .right{
+    padding: 20px;
+}
+
+.headerSection .profileImage{
+    background-image: url('/assets/images/profile.png');
+    height: 150px;
+    width: 150px;
+    background-size: 150px;
+    border-radius: 50%;
+}
+
+.headerSection .profileName{
+    color: #215dbf;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.headerSection .profileDesignation{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.introductionSection{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.importantSection{
+    margin-bottom: 100px;
+}
+
+.importantSectionText{
+    font-size: 19px;
+    text-align: center;
+    color: #215dbf;
+    font-weight: bold;
+}
+
+.importantSectionDivHolder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.importantSectionDiv{
+    border: dashed 1px #215dbf;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+.importantSectionDiv img{
+    animation-name: animate-pop;
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+    animation-fill-mode: backwards;
+    animation-delay: calc(.85s + .2s * var(--i));
+}
+
+.impoartantSectionUrl{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.skillHolder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.skillsSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.skillsSection .skillContainer{
+    border: dashed 1px #215dbf;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.skill{
+    font-size: 12px;
+    padding: 10px 5px;
+    background: #f7f7f7;
+    margin: 8px 0;
+    border-radius: 10px;
+    margin-right: 8px;
+    text-align: center;
+    animation-name: animate-pop;
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+    animation-fill-mode: backwards;
+    animation-delay: calc(.85s + .2s * var(--i));
+}
+
+.skill div{
+    margin-top: 8px;
+}
+
+.skill img{
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
 }
 
 
+@media only screen and (max-width: 767.98px) {
+    .headerSection .profileImage{
+        height: 100px;
+        width: 100px;
+        background-size: 100px;
+    }
 
+    .importantSectionDivHolder{
+        grid-template-columns: 1fr;
+    }
 
-/* Mobile */
+    .skillsSection{
+        grid-template-columns: 1fr;
+    }
 
-@media only screen and (max-width: 768px) {
-  .popup-button {
-    margin: auto;
-    display: block;
-    margin-top: 30px;
-  }
+    .headerSection .profileName{
+        font-size: 32px;
+    }
 
-  .introTextHolder {
-    font-size: 20px;
-  }
-
-  .mountain1 {
-    background-size: cover;
-    bottom: 80px;
-  }
-
-  .clouds_bg {
-    bottom: 200px;
-  }
-
-  #rock_1 {
-    right: 10px;
-    width: 40px;
-  }
-
-  .grass2 {
-    bottom: 74px;
-  }
-
-  .tree {
-    bottom: 78px;
-  }
-
-  #tree_3 {
-    width: 200px;
-    display: none;
-  }
-
-  #tree_2 {
-    width: 200px;
-  }
-
-  #tree_1 {
-    width: 250px;
-    z-index: 1;
-  }
-
-  .rock {
-    bottom: 65px;
-  }
-
-  .earth {
-    height: 80px;
-  }
-
-
-  .grass1 {
-    height: 28px;
-    background-size: cover;
-    bottom: 55px;
-  }
-
-
+    .headerSection .profileDesignation{
+        font-size: 18px;
+    }
 }
